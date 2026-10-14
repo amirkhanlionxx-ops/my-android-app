@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Amir Khan</string>
+    <string name="title_activity_main">Amir Khan</string>
+    <string name="package_name">com.amir.app</string>
+    <string name="custom_url_scheme">com.amir.app</string>
+</resources>

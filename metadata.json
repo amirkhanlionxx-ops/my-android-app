@@ -1,0 +1,10 @@
+{
+  "name": "Remix Remix Remix Remix Remix ANDROID IDE PLATFORM",
+  "description": "Mobile Android IDE platform with project tools, templates, full file tree, and code editor.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
