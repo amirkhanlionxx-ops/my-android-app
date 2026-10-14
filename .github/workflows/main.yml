@@ -17,7 +17,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install Dependencies
         run: npm ci || npm install
@@ -28,12 +28,10 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
       - name: Build Android APK with Capacitor
         run: |
           npx cap sync android || true
+          chmod +x android/gradlew
           cd android && ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK Artifact
